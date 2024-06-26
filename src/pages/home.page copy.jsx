@@ -12,8 +12,6 @@ import LoadMoreDataBtn from "../components/load-more.component";
 import Footer from "../components/footer.component";
 import HomeBanner from "../components/homebanner.component";
 import { Link } from "react-router-dom";
-import About from "./about.page";
-import Club from "./club.page";
 
 const HomePage = () => {
     let [blogs, setBlog] = useState(null);
@@ -118,7 +116,7 @@ const HomePage = () => {
                 {/* latest blogs */}
                 <div className="w-full">
                     <InPageNavigation
-                        routes={[ pageState , "บทความยอดนิยม", "บริการ", "ชมรม", "เกี่ยวกับ ก.อศ."]}
+                        routes={[ pageState , "บทความยอดนิยม"]}
                         defaultHidden={["บทความยอดนิยม"]}
                     >
                         <>
@@ -171,27 +169,6 @@ const HomePage = () => {
                                 })
                             : <NoDataMessage message="ยังไม่มีบทความยอดนิยม" />
                         )}
-
-                        <>
-                            <div>
-                                <p className="text-3xl text-[#DE5C8E]">กำลังสร้าง มาแน่ เร็ว ๆ นี้</p>
-                            </div>
-                        </>
-                        <>
-                            <AnimationWrapper
-                                transition={{
-                                    duration: 1,
-                                    delay: 0.1,
-                                }}                                
-                            >
-                                <Club />
-                            </AnimationWrapper>
-                            
-                        </>
-                        <>
-                            <About />
-                        </>
-
                     </InPageNavigation>
                 </div>
 

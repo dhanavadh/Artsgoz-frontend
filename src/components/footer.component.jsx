@@ -8,7 +8,7 @@ import { storeInSession } from "../common/session";
 
 function Footer() {    
     const unb = `underline-thickness-1 underline-offset-4 hover:underline cursor-pointer transition-colors duration-300`
-    const hds = `mb-3 text-2xl font-bold title-font`
+    const hds = `mb-3 text-2xl font-medium title-font`
 
     let { theme, setTheme } = useContext(ThemeContext);
 
@@ -158,7 +158,7 @@ function Footer() {
                         </div>
                     </div>
                     <div className="container px-5 py-4 mx-auto">
-                        <p className="text-sm capitalize xl:text-center">Copyright © 2024 Artsgoz. สงวนสิทธิ์ทุกประการ
+                        <p className="text-sm capitalize text-center">Copyright © 2024 Artsgoz. สงวนสิทธิ์ทุกประการ
                         </p>
                     </div>
                 </footer>
