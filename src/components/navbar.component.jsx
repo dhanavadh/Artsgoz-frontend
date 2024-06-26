@@ -6,7 +6,7 @@ import { ThemeContext, UserContext } from '../App';
 import UserNavigationPanel from "./user-navigation.component";
 import axios from "axios";
 import { storeInSession } from "../common/session";
-import Typewriter from 'typewriter-effect';
+import logo from "../imgs/logo.png";
 
 const Navbar = () => {
 
@@ -71,8 +71,11 @@ const Navbar = () => {
         <>
             <nav className="navbar z-50">
 
-                <Link to="/" className="flex-none w-48">
-                    <img src={ theme == "light" ? darkLogo : lightLogo } className="w-full" />
+                <Link to="/" className="hidden lg:flex gap-2 w-48">
+                    <img src={ theme == "light" ? darkLogo : lightLogo } className="" />                    
+                </Link>
+                <Link to="/" className="flex lg:hidden">                    
+                    <img src={logo} className="w-16" />
                 </Link>
 
                 <div className={"absolute bg-white w-full left-0 top-full mt-0.5 border-b border-grey py-4 px-[5vw] md:border-0 md:block md:relative md:inset-0 md:p-0 md:w-auto md:show " + ( searchBoxVisibility ? "show" : "hide" )}>
@@ -129,9 +132,16 @@ const Navbar = () => {
                         </>
                         :
                         <>
-                            <Link className="btn-dark py-2" to="/signin">
-                            เข้าสู่ระบบ
-                            <i className="fi fi-bs-arrow-up-right mt-2 ml-2"></i>                            
+                            <div className="hidden md:flex">
+                                <Link className="btn-dark py-2" to="/signin">
+                                เข้าสู่ระบบ
+                                <i className="fi fi-bs-arrow-up-right mt-2 ml-2"></i>                            
+                                </Link>
+                            </div>
+                            <Link to='/signin'>
+                                <button  className="md:hidden bg-grey w-12 h-12 rounded-full flex items-center justify-center">
+                                    <i className="fi fi-rr-user text-2xl block mt-1"></i>
+                                </button>
                             </Link>
                             {/* <Link className="btn-light py-2 hidden md:block" to="/signup">
                                 Sign Up
