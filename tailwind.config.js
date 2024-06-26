@@ -17,8 +17,10 @@ export default {
 
         extend: {
             fontFamily: {
-              inter: ["'Inter'", "sans-serif"],
-              gelasio: ["'Gelasio'", "serif"]
+              inter: ["'Kanit'", "sans-serif"],
+              gelasio: ["'Gelasio'", "serif"],
+              ibm: ["'IBM Plex Sans Thai'", "sans-serif"],
+              kanit: ["'Kanit'", "sans-serif"]
             },
         },
 

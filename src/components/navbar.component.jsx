@@ -67,16 +67,30 @@ const Navbar = () => {
 
     }
 
+    const [color, setColor ] = useState(false);
+    const changeColor = () => {
+        if(window.scrollY >= 500){
+            setColor(true)
+        }else {
+            setColor(false)
+        }
+
+    }
+    window.addEventListener('scroll', changeColor);
+
     return (
         <>
             <nav className="navbar z-50">
 
-                <Link to="/" className="hidden lg:flex gap-2 w-48">
+                <Link to="/" className="flex gap-2 w-48">
                     <img src={ theme == "light" ? darkLogo : lightLogo } className="" />                    
                 </Link>
-                <Link to="/" className="flex lg:hidden">                    
+                {/* <Link to="/" className="hidden lg:flex gap-2 w-48">
+                    <img src={ theme == "light" ? darkLogo : lightLogo } className="" />                    
+                </Link> */}
+                {/* <Link to="/" className="flex lg:hidden">                    
                     <img src={logo} className="w-16" />
-                </Link>
+                </Link> */}
 
                 <div className={"absolute bg-white w-full left-0 top-full mt-0.5 border-b border-grey py-4 px-[5vw] md:border-0 md:block md:relative md:inset-0 md:p-0 md:w-auto md:show " + ( searchBoxVisibility ? "show" : "hide" )}>
                     <input 
