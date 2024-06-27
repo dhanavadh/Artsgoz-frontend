@@ -14,6 +14,7 @@ import HomeBanner from "../components/homebanner.component";
 import { Link } from "react-router-dom";
 import About from "./about.page";
 import Club from "./club.page";
+import ServiceDetail from "./service.page";
 
 const HomePage = () => {
     let [blogs, setBlog] = useState(null);
@@ -173,9 +174,14 @@ const HomePage = () => {
                         )}
 
                         <>
-                            <div>
-                                <p className="text-3xl text-[#DE5C8E]">กำลังสร้าง มาแน่ เร็ว ๆ นี้</p>
-                            </div>
+                            <AnimationWrapper
+                                transition={{
+                                    duration: 1,
+                                    delay: 0.1,
+                                }}                                
+                            >
+                                <ServiceDetail />
+                            </AnimationWrapper>
                         </>
                         <>
                             <AnimationWrapper

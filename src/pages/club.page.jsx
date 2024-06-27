@@ -14,7 +14,7 @@ const Club = () => {
   return (
     <div>
         <p className="text-3xl font-medium mb-3">ช่องทางการติดต่อชมรม</p>
-            <hr className="my-5" />
+            <hr className="my-5 border-grey" />
             <Link to='https://www.instagram.com/aksaravathit' target="_blank" className="flex gap-8 items-center border-b border-grey pb-5 mb-4">
                 <div className="w-full">
 
