@@ -271,7 +271,7 @@ const HomePage = () => {
                                 <Link to='https://calendar.google.com/calendar/embed?height=400&wkst=1&bgcolor=%23db5f8e&ctz=Asia%2FBangkok&hl=en&showNav=1&showPrint=0&showCalendars=1&src=cmVnY2FsZW5kYXJAdGVhbS5jaHVsYS5hYy50aA&color=%23039BE5' target="_blank" className="text-xl hover:underline ml-6">[CUREG Calendar] ทวิภาค-ทวิภาคนานาชาติ</Link>
                             </div>
 
-                        </div>
+                        </div>                        
                     </div>
                 </div>
             </section>
