@@ -1,3 +1,8 @@
+import { Button, Dialog, DialogPanel, DialogTitle, Transition } from '@headlessui/react'
+import { useState, Fragment } from 'react'
+
+
+  
 import { Link } from 'react-router-dom';
 import { ThemeContext } from '../App';
 import darkLogo from "../imgs/logo-dark.png";
@@ -22,6 +27,16 @@ function Footer() {
 
         storeInSession("theme", newTheme);
 
+    }
+
+    let [isOpen, setIsOpen] = useState(false)
+
+    function open() {
+        setIsOpen(true)
+    }
+
+    function close() {
+        setIsOpen(false)
     }
     return (
         <div>
@@ -106,9 +121,6 @@ function Footer() {
                                     <li className="mt-3">
                                         <Link className={unb} to='/editor' >เขียนบทความ</Link>
                                     </li>
-                                    <li className="mt-3">
-                                        <Link className={unb} to='/about/asset'>ตราสัญลักษณ์องค์กร</Link>
-                                    </li>
                                 </nav>
                             </div>
                             <div className="w-full px-4 lg:w-1/4 md:w-1/2">
@@ -116,13 +128,13 @@ function Footer() {
                                 </p>
                                 <nav className="mb-5 list-none">
                                     <li className="mt-3">
-                                        <Link className={unb} to='https://sites.google.com/view/regartscu/' target='_blank'>ข่าวสาร/กิจกรรม</Link>
+                                        <Link className={unb} to='https://www.instagram.com/arts_goz/' target='_blank'>ข่าวสาร/กิจกรรม</Link>
                                     </li>
                                     <li className="mt-3">
                                         <Link className={unb} to='#' >บทความ</Link>
                                     </li>
                                     <li className="mt-3">
-                                        <Link className={unb} to='/about' >ชมรม</Link>
+                                        <Link className={unb} to='#' >ชมรม</Link>
                                     </li>
                                     <li className="mt-3">
                                         <Link className={unb} to='https://open.spotify.com/show/2Va46VL9Nf2OKy4KnNQQmg?si=c667cef8f9e14a09' target='_blank'>Arts Podcast</Link>
@@ -130,9 +142,9 @@ function Footer() {
                                 </nav>
                                 <p className={hds}>ช่วยเหลือ/ร้องเรียน</p>
                                 <nav className="mb-5 list-none">
-                                    <li className="mt-3">
+                                    {/* <li className="mt-3">
                                         <Link className={unb} to='/faq'>คำถามที่พบบ่อย</Link>
-                                    </li>
+                                    </li> */}
                                     <li className="mt-3">
                                         <Link className={unb} to='https://linktr.ee/artsgoz' target='_blank' >ร้องเรียนปัญหาต่าง ๆ</Link>
                                     </li>
@@ -145,10 +157,11 @@ function Footer() {
                                 <p className={hds}>เกี่ยวกับเว็บไซต์</p>
                                 <div className="mb-5 list-none">
                                     <li className="mt-3">
-                                        <Link className={unb} to='/acknowledgement' >ข้อกำหนดการใช้งาน</Link>
+                                        <Link className={unb} onClick={open} >ข้อกำหนดการใช้งาน</Link>
                                     </li>
                                     <li className="mt-3">
-                                        <Link className={unb} to='/support/privacy' >แผนผังเว็บไซต์</Link>
+                                        <Link className={unb} to='https://www.arts.chula.ac.th/goz/asset/artsgoz_ci.pdf' target='_blank'>Artsgoz Website
+                                        Identity Guideline</Link>
                                     </li>
                                     <li className="mt-3">
                                         <Link className={unb} to='https://github.com/artsgoz' target='_blank' >GitHub Repository</Link>
@@ -162,7 +175,97 @@ function Footer() {
                         </p>
                     </div>
                 </footer>
-            </div>        
+            </div>  
+
+            {/* acknowledgement Dialog */}
+            {/* <Dialog open={isOpen} as="div" className="relative z-10 focus:outline-none" onClose={close}>
+                <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
+                <div className="flex min-h-full items-center justify-center p-4">
+                    <DialogPanel
+                    transition
+                    className="w-full max-w-md rounded-xl p-6 duration-300 ease-out data-[closed]:transform-[scale(95%)]"
+                    >
+                    <DialogTitle as="h3" className="text-base/7 font-medium text-white">
+                        Payment successful
+                    </DialogTitle>
+                    <p className="mt-2 text-sm/6 text-white/50">
+                        Your payment has been successfully submitted. We’ve sent you an email with all of the details of your
+                        order.
+                    </p>
+                    <div className="mt-4">
+                        <Button
+                        className="inline-flex items-center gap-2 rounded-md bg-gray-700 py-1.5 px-3 text-sm/6 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-gray-600 data-[focus]:outline-1 data-[focus]:outline-white data-[open]:bg-gray-700"
+                        onClick={close}
+                        >
+                        Got it, thanks!
+                        </Button>
+                    </div>
+                    </DialogPanel>
+                </div>
+                </div>
+            </Dialog>       */}
+            <Dialog as="div" className="relative z-10" open={isOpen} onClose={close}>
+            <Transition.Child
+              as={Fragment}
+              enter="ease-out duration-300"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+              leave="ease-in duration-200"
+              leaveFrom="opacity-100"
+              leaveTo="opacity-0"
+            >
+              <div className="fixed inset-0 bg-black bg-opacity-25" />
+            </Transition.Child>
+            <div className="fixed inset-0 overflow-y-auto">
+              <div className="flex min-h-full items-center justify-center p-4 text-center">
+                <Transition.Child
+                  as={Fragment}
+                  enter="ease-out duration-300"
+                  enterFrom="opacity-0 scale-95"
+                  enterTo="opacity-100 scale-100"
+                  leave="ease-in duration-200"
+                  leaveFrom="opacity-100 scale-100"
+                  leaveTo="opacity-0 scale-95"
+                >
+                 <Dialog.Panel className="w-full max-w-xl transform overflow-hidden rounded bg-white p-6 text-left align-middle shadow-xl transition-all">
+                  <Dialog.Title
+                    as="h3"
+                    className="text-lg leading-6"
+                  >
+                    ข้อกำหนดการใช้งาน
+                  </Dialog.Title>
+                  <div className="mt-3">
+                    <p className="text-lg font-light">
+                    การใช้งานเว็บไซต์ <strong>Artsgoz – คณะกรรมการนิสิตอักษรศาสตร์</strong> นี้ เป็นที่ยอมรับว่าท่านได้อ่านและเข้าใจข้อตกลงการใช้งานเว็บไซต์และท่านตกลงที่จะผูกพันและปฏิบัติตามข้อตกลงการใช้งานเว็บไซต์นี้ โปรดอย่าใช้งานเว็บไซต์นี้หากท่านไม่ตกลงที่จะผูกพันตามข้อตกลงการใช้งานนี้
+                    </p>                    
+                  </div>
+                  <div className="mt-3">
+                    <p className='text-2xl mb-2'>การใช้และการเปิดเผยข้อมูลส่วนบุคคล</p>
+                    <p className="text-lg font-light">
+                    เว็บไซต์ <strong>Artsgoz – คณะกรรมการนิสิตอักษรศาสตร์</strong> นี้ จะไม่มีการขอข้อมูล หากท่านไม่ยินยอมที่จะใช้งานบริการใด ๆ ที่จำเป็นต้องขอข้อมูลท่าน หากท่านต้องการใช้งานบริการบางส่วนที่มีความจำเป็นต้องเก็บข้อมูลส่วนบุคคล เช่น การเขียนบทความ จะถือว่าท่านตกลงและยอมรับว่าข้อมูลส่วนบุคคลของท่านทั้งหมดจะถูกใช้งานภายในเว็บไซต์นี้เท่านั้น และจะไม่มีการเปิดเผยข้อมูลส่วนบุคคลของท่านให้กับบุคคลภายนอก
+                    </p>
+                  </div>
+                  <div className="mt-3">
+                    <p className='text-2xl mb-2'>ข้อสงวนสิทธิในความรับผิด</p>
+                    <p className="text-lg font-light">
+                    ข้อมูลหรือเนื้อหาใด ๆ ที่ปรากฏบนเว็บไซต์ <strong>Artsgoz – คณะกรรมการนิสิตอักษรศาสตร์</strong> อาจมีส่วนที่ผิดพลาน ไม่ถูกต้อง หรือไม่ครบถ้วน และเว็บไซต์ไม่มีส่วนรับผิดใด ๆ ในเรื่องของความเสียหายที่เกิดขึ้นจากการใช้งานข้อมูลหรือเนื้อหาใด ๆ ที่ปรากฏบนเว็บไซต์นี้ และ ขอสงวนสิทธิในการแก้ไขเปลี่ยนแปลงเว็บไซต์และข้อมูลที่ระบุบนเว็บไซต์โดยไม่ต้องแจ้งให้ทราบล่วงหน้า
+                    </p>
+                  </div>
+
+                  <div className="mt-5">
+                    <button
+                      type="button"
+                      className="btn-dark"
+                      onClick={close}
+                    >
+                      รับทราบ
+                    </button>
+                  </div>
+                </Dialog.Panel>
+                </Transition.Child>
+              </div>
+            </div>
+          </Dialog>
         </div>
     );
 }
