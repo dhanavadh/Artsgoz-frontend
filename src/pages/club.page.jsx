@@ -174,6 +174,22 @@ const Club = () => {
                 </div>
 
             </Link>
+            <Link to='https://docs.google.com/spreadsheets/d/1xBwJVTpArY9_uqLVprwI02rgdgHd0lTvz3QIPjhsGb4/edit' target="_blank" className="flex gap-8 items-center border-b border-grey pb-5 mb-4">
+                <div className="w-full">
+
+                    <h1 className="blog-title">ชมรมกีฬา</h1>
+
+                    <p className="my-3 text-xl font-gelasio leading-7 line-clamp-2">สามารถดูช่องทางการติดต่อชมรมกีฬาภายในคณะได้ที่ลิงก์ด้านล่างนี้
+                    </p>
+                    <p className="hover:underline text-xl font-gelasio leading-7 line-clamp-2">คลิกที่นี่</p>
+
+                </div>
+                
+                {/* <div className="h-28">
+                    <img src={aksornSan} className="w-full h-full aspect-square rounded-full object-cover" />
+                </div> */}
+
+            </Link>
     </div>
   )
 }
