@@ -1,4 +1,4 @@
-import { Button, Dialog, DialogPanel, DialogTitle, Transition } from '@headlessui/react'
+import { Dialog, Transition } from '@headlessui/react'
 import { useState, Fragment } from 'react'
 
 
@@ -170,10 +170,10 @@ function Footer() {
                             </div>
                         </div>
                     </div>
-                    <div className="container px-5 py-4 mx-auto">
+                    {/* <div className="container px-5 py-4 mx-auto">
                         <p className="text-sm capitalize text-center">Copyright © 2024 Artsgoz. สงวนสิทธิ์ทุกประการ
                         </p>
-                    </div>
+                    </div> */}
                 </footer>
             </div>  
 
