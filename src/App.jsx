@@ -14,6 +14,10 @@ import ChangePassword from "./pages/change-password.page";
 import EditProfile from "./pages/edit-profile.page";
 import Notifications from "./pages/notifications.page";
 import ManageBlogs from "./pages/manage-blogs.page";
+import About from "./pages/about.page";
+import Asset from "./pages/asset.page";
+import Service from "./pages/service.page";
+
 
 export const UserContext = createContext({})
 
@@ -70,6 +74,9 @@ const App = () => {
                         <Route path="search/:query" element={<SearchPage />} />
                         <Route path="user/:id" element={<ProfilePage />} />
                         <Route path="blog/:blog_id" element={<BlogPage />}/>
+                        <Route path="/about" element={<About />}/>
+                        <Route path="/asset" element={<Asset />} />
+                        <Route path="/service" element={<Service />} />
                         <Route path="*" element={<PageNotFound />} /> 
                     </Route>
                 </Routes>

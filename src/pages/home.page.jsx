@@ -12,9 +12,9 @@ import LoadMoreDataBtn from "../components/load-more.component";
 import Footer from "../components/footer.component";
 import HomeBanner from "../components/homebanner.component";
 import { Link } from "react-router-dom";
-import About from "./about.page";
 import Club from "./club.page";
-import ServiceDetail from "./service.page";
+import AboutGoz from "../components/goz.about.component";
+import ServiceDetail from "../components/service.component";
 
 const HomePage = () => {
     let [blogs, setBlog] = useState(null);
@@ -195,7 +195,7 @@ const HomePage = () => {
                             
                         </>
                         <>
-                            <About />
+                            <AboutGoz />
                         </>
 
                     </InPageNavigation>
