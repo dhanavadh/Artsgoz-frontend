@@ -21,38 +21,7 @@ function HomeBanner() {
                     </div>
                     
                 </div>
-            </div>
-            {/* <div className='grid grid-cols-1'>
-                <div className="grid grid-cols-3 min-h-screen">
-                    <div className="col-span-3">
-                        <img src='https://artsgoz.s3.ap-southeast-1.amazonaws.com/UCAde8wdyS8X5vtWJv7Fh-1719306926369.jpeg' className='ssa'></img>
-                    </div>
-                    <div className="col-span-2">
-                        <div className="grid grid-rows-1 gap-2 mx-10">
-                            <div className="col-span-4">
-                                <p className='text-8xl text-[#F8E1EA]'>What is <b>AKSORN</b>?</p>    
-                            </div>
-                            <div className="col-span-1 ">
-                                <div className='flex text-6xl font-semibold mt-2 underline text-[#F8E1EA] mb-0'>
-                                        <Typewriter
-                                            options={{
-                                                strings: ['language?', 'drama?', 'literature?', 'BRK 503?', 'humanities?', 'philosophy?', 'technology?'],
-                                                autoStart: true,
-                                                loop: true,
-                                            }}
-                                        />
-                                </div>
-                            </div>
-                            <div className="col-span-4 mt-2">
-                                <div type='button' className='flex px-2 py-1 border-2 border-[#F8E1EA] w-fit h-auto mt-2 text-[#F8E1EA] underline-thickness-1 hover:underline hover:bg-[#F8E1EA] hover:text-[#1F1F1F]
-        `                           cursor-pointer transition-colors duration-300'>
-                                    เรียนรู้เพิ่มเติม                         
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>            
-            </div> */}
+            </div>            
         </div>
     );
 }

@@ -84,13 +84,13 @@ function Footer() {
                                         <Link className={unb} to='/about'>คณะกรรมการและสมาชิก</Link>
                                     </li>
                                     <li className="mt-3">
-                                        <Link className={unb} to='/about/dept'>หน่วยงานในสังกัด ก.อศ.</Link>
+                                        <Link className={unb} to='/about'>หน่วยงานในสังกัด ก.อศ.</Link>
                                     </li>
                                     <li className="mt-3">
                                         <Link className={unb} to='/about'>ช่องทางการติดต่อ</Link>
                                     </li>
                                     <li className="mt-3">
-                                        <Link className={unb} to='/docs'>เอกสาร/แบบฟอร์ม</Link>
+                                        <Link className={unb} to='/about'>เอกสาร/แบบฟอร์ม</Link>
                                     </li>    
                                 </nav>
                                 <p className={hds}>ฝ่ายประชาสัมพันธ์</p>
@@ -102,7 +102,7 @@ function Footer() {
                                         <Link className={unb} to='https://airtable.com/appL41ESosi23CmVb/shrOw4kbtV4ghnpRW' target='_blank'>ติดต่อขอลงงานประชาสัมพันธ์ ก.อศ.</Link>
                                     </li>
                                     <li className="mt-3">
-                                        <Link className={unb} to='/about/asset'>ตราสัญลักษณ์องค์กร</Link>
+                                        <Link className={unb} to='/asset'>ตราสัญลักษณ์องค์กร</Link>
                                     </li>
                                 </nav>
                             </div>
@@ -131,10 +131,10 @@ function Footer() {
                                         <Link className={unb} to='https://www.instagram.com/arts_goz/' target='_blank'>ข่าวสาร/กิจกรรม</Link>
                                     </li>
                                     <li className="mt-3">
-                                        <Link className={unb} to='#' >บทความ</Link>
+                                        <Link className={unb} to='/' >บทความ</Link>
                                     </li>
                                     <li className="mt-3">
-                                        <Link className={unb} to='#' >ชมรม</Link>
+                                        <Link className={unb} to='/' >ชมรม</Link>
                                     </li>
                                     <li className="mt-3">
                                         <Link className={unb} to='https://open.spotify.com/show/2Va46VL9Nf2OKy4KnNQQmg?si=c667cef8f9e14a09' target='_blank'>Arts Podcast</Link>
