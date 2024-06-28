@@ -9,6 +9,7 @@ import artsstreet from "../imgs/clubs/artsstreetofficial.jpg"
 import artsting from "../imgs/clubs/artstingofficial.jpg"
 import leelart from "../imgs/clubs/leelartaksorncu.jpg"
 import musicaltheatre from "../imgs/clubs/musicaltheatre-artscu.jpg"
+import artsshw from "../imgs/clubs/artsshw.jpg"
 
 const Club = () => {
   return (
@@ -174,20 +175,23 @@ const Club = () => {
                 </div>
 
             </Link>
-            <Link to='https://docs.google.com/spreadsheets/d/1xBwJVTpArY9_uqLVprwI02rgdgHd0lTvz3QIPjhsGb4/edit' target="_blank" className="flex gap-8 items-center border-b border-grey pb-5 mb-4">
+            <Link to='https://www.instagram.com/artsgoz.shw' target="_blank" className="flex gap-8 items-center border-b border-grey pb-5 mb-4">
                 <div className="w-full">
 
                     <h1 className="blog-title">ชมรมกีฬา</h1>
 
-                    <p className="my-3 text-xl font-gelasio leading-7 line-clamp-2">สามารถดูช่องทางการติดต่อชมรมกีฬาภายในคณะได้ที่ลิงก์ด้านล่างนี้
+                    <p className="my-3 text-xl font-gelasio leading-7 line-clamp-2">Sports Health and Wellness, Arts Student Commitee CU
+                        ฝ่ายกีฬา สุขภาพ และสุขภาวะ
+                        คณะกรรมการนิสิตอักษรศาสตร์ (ก.อศ.)
+                        จุฬาลงกรณ์มหาวิทยาลัย
                     </p>
-                    <p className="hover:underline text-xl font-gelasio leading-7 line-clamp-2">คลิกที่นี่</p>
+                    <p className="hover:underline text-xl font-gelasio leading-7 line-clamp-2">Instagram: @artsgoz.shw</p>
 
                 </div>
                 
-                {/* <div className="h-28">
-                    <img src={aksornSan} className="w-full h-full aspect-square rounded-full object-cover" />
-                </div> */}
+                <div className="h-28">
+                    <img src={artsshw} className="w-full h-full aspect-square rounded-full object-cover" />
+                </div>
 
             </Link>
     </div>

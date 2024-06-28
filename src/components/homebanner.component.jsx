@@ -1,4 +1,3 @@
-import Typewriter from 'typewriter-effect';
 import '../components/homebanner.css';
 import { Link } from 'react-router-dom';
 
