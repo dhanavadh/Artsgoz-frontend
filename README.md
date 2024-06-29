@@ -1,4 +1,4 @@
-# Artsgoz Frontend – 6/29 First Released
+# Artsgoz – 6/29 First Released
 
 <img src="https://www.arts.chula.ac.th/goz/asset/icons/aw-nav.png" height='50px'/>
 This project is contributed by Artsgoz (ก.อศ.) in 2023 and planned to be completed within the end of June, 2024 and will be transfered to GOZ67 members.
