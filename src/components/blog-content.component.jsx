@@ -10,9 +10,9 @@ const Img = ({ url, caption }) => {
 
 const Quote = ({ quote, caption }) => {
     return (
-        <div className="bg-purple/10 p-3 pl-5 border-l-4 border-purple">
+        <div className="bg-red/10 p-3 pl-5 border-l-4 border-red">
             <p className="text-xl leading-10 md:text-2xl">{quote}</p>
-            {caption.length ? <p className="w-full text-purple text-base">{caption}</p> : ""}
+            {caption.length ? <p className="w-full text-red text-base">{caption}</p> : ""}
         </div>
     )
 }
