@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import lightPageNotFoundImg from "../imgs/logo-light.png";
-import darkPageNotFoundImg from "../imgs/logo-dark.png";
 import lightFullLogo from "../imgs/logo-light.png";
 import darkFullLogo from "../imgs/logo-dark.png";
 import { ThemeContext } from "../App";
@@ -17,7 +15,7 @@ const PageNotFound = () => {
             {/* <img src={ theme == "light" ? darkPageNotFoundImg : lightPageNotFoundImg } className="select-none border-2 border-grey w-72 object-cover rounded" /> */}
             <img src={errorNotFound} className="select-none w-72 object-cover rounded" />
 
-            <h1 className="text-4xl font-gelasio leading-7">ไม่พบหน้า</h1>
+            <h1 className="text-4xl leading-7">ไม่พบหน้า</h1>
             <p className="text-dark-grey text-xl leading-7 -mt-8">ไม่พบหน้าที่คุณกำลังตามหา กำลับไปยัง <Link to="/" className="text-black underline">หน้าแรก</Link></p>
 
             <div className="mt-auto">
