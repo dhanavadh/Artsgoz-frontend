@@ -166,6 +166,12 @@ function Footer() {
                                     <li className="mt-3">
                                         <Link className={unb} to='https://github.com/artsgoz' target='_blank' >GitHub Repository</Link>
                                     </li>
+                                    <li className="mt-3">
+                                        <Link className={unb} to='https://airtable.com/appA8ImL9XTyWJrdr/shrjJycDMqOzuxShq' target='_blank' >แจ้งปัญหาใช้งานเว็บไซต์</Link>
+                                    </li>
+                                    <li className="mt-3">
+                                        <Link className={unb} to='https://airtable.com/appA8ImL9XTyWJrdr/shrMgLzFWgHfX1xJs' target='_blank' >ติดตาม Ticket แจ้งปัญหาใช้งานเว็บไซต์</Link>
+                                    </li>
                                 </div>                                
                             </div>
                         </div>
