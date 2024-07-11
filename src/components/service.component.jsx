@@ -116,7 +116,7 @@ const ServiceDetail = () => {
                         </div>                                            
                         <div className='pb-5'>
                     </div>
-                    <hr className="my-5"/>
+                    <hr className="my-5 border-grey"/>
                     <div className='grid'>
                         <div className='text-2xl pb-3 font-medium'>บริการจากมหาวิทยาลัย</div>
                         <div className=' pb-3 pl-3'>สามารถดูบริการด้าน IT สำหรับนิสิตได้ที่นี่</div>

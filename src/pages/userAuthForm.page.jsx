@@ -153,18 +153,22 @@ const UserAuthForm = ({ type }) => {
                         { type.replace("-", " ") }
                     </button>
 
-                    <div className="relative w-full flex items-center gap-2 my-10 opacity-10 uppercase text-black font-bold">
-                        <hr className="w-1/2 border-black" />
-                        <p className="text-black">หรือ</p>
-                        <hr className="w-1/2 border-black" />
-                    </div>
-
-                    <button className="btn-dark flex items-center justify-center gap-4 w-[90%] center"
+                    {/* 
+                        <div className="relative w-full flex items-center gap-2 my-10 opacity-10 uppercase text-black font-bold">
+                            <hr className="w-1/2 border-black" />
+                            <p className="text-black">หรือ</p>
+                            <hr className="w-1/2 border-black" />
+                        </div>
+                        */}
+                    
+                    {/* 
+                        <button className="btn-dark flex items-center justify-center gap-4 w-[90%] center"
                         onClick={handleGoogleAuth}
                     >
                         <img src={googleIcon} className="w-5" />
                         เข้าสู่ระบบผ่าน Google
                     </button>
+                        */}
 
                     {
 
