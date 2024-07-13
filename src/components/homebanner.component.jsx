@@ -10,7 +10,7 @@ function HomeBanner() {
                         <div className='grid grid-rows mx-10 mt-32'>
                             <p className='grid text-[40px] text-[#F8E1EA] font-kanit'> ข้อมูลสำหรับนิสิตใหม่ที่ควรรู้</p>
                             <div className='grid'>
-                                    <Link to='https://sites.google.com/view/regartscu/' target='_blank' type='button' className='flex px-2 py-2 border-2 border-[#F8E1EA] w-fit h-12 mt-4 text-[#F8E1EA] text-xl underline-thickness-1 hover:underline hover:bg-[#F8E1EA] hover:text-[#1F1F1F]
+                                    <Link to='https://sites.google.com/view/regartscu/' target='_blank' type='button' className='flex px-2 py-2 border-2 rounded-lg border-[#F8E1EA] w-fit h-12 mt-4 text-[#F8E1EA] text-xl underline-thickness-1 hover:underline hover:bg-[#F8E1EA] hover:text-[#1F1F1F]
             `                           cursor-pointer transition-colors duration-300'>
                                         เรียนรู้เพิ่มเติม                         
                                     </Link>
