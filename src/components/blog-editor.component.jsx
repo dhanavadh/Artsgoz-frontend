@@ -1,4 +1,6 @@
 import { Link, useNavigate, useParams } from "react-router-dom";
+import { useState, Fragment } from 'react'
+import { Dialog, Transition } from '@headlessui/react'
 import lightLogo from "../imgs/logo-light.png";
 import darkLogo from "../imgs/logo-dark.png";
 import AnimationWrapper from "../common/page-animation";
@@ -154,6 +156,15 @@ const BlogEditor = () => {
             })
         }
     }
+    let [isOpen, setIsOpen] = useState(true)
+
+    function open() {
+        setIsOpen(true)
+    }
+
+    function close() {
+        setIsOpen(false)
+    }
 
     return (
         <>
@@ -216,6 +227,56 @@ const BlogEditor = () => {
                     </div>
                 </section>
             </AnimationWrapper>
+            <Dialog as="div" className="relative z-10" open={isOpen} onClose={close}>
+            <Transition.Child
+              as={Fragment}
+              enter="ease-out duration-300"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+              leave="ease-in duration-200"
+              leaveFrom="opacity-100"
+              leaveTo="opacity-0"
+            >
+              <div className="fixed inset-0 bg-black bg-opacity-25" />
+            </Transition.Child>
+            <div className="fixed inset-0 overflow-y-auto">
+              <div className="flex min-h-full items-center justify-center p-4 text-center">
+                <Transition.Child
+                  as={Fragment}
+                  enter="ease-out duration-300"
+                  enterFrom="opacity-0 scale-95"
+                  enterTo="opacity-100 scale-100"
+                  leave="ease-in duration-200"
+                  leaveFrom="opacity-100 scale-100"
+                  leaveTo="opacity-0 scale-95"
+                >
+                 <Dialog.Panel className="w-full max-w-xl transform overflow-hidden rounded bg-white p-6 text-left align-middle shadow-xl transition-all">
+                  <Dialog.Title
+                    as="h3"
+                    className="text-lg leading-6"
+                  >
+                    คำแนะนำเรื่องการอัปโหลดภาพ
+                  </Dialog.Title>
+                  <div className="mt-2">
+                    <p className="text-xl font-light">
+                    เนื่องจากบริการที่ท่านกำลังใช้งานอยู่นั้นเป็นบริการโดยไม่เสียค่าใช้จ่าย และมีข้อจำกัดเรื่องพื้นที่การใช้งาน <b className="text-xl font-medium">เราจึงขอแนะนำให้ท่านอัปโหลดภาพไม่เกิน 1 ภาพ</b> ขออภัยในความไม่สะดวก
+                    </p>                    
+                  </div>                  
+
+                  <div className="mt-5">
+                    <button
+                      type="button"
+                      className="btn-dark"
+                      onClick={close}
+                    >
+                      ปิด
+                    </button>
+                  </div>
+                </Dialog.Panel>
+                </Transition.Child>
+              </div>
+            </div>
+          </Dialog>
         </>
     )
 }
