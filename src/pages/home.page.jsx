@@ -15,6 +15,7 @@ import { Link } from "react-router-dom";
 import Club from "./club.page";
 import AboutGoz from "../components/goz.about.component";
 import ServiceDetail from "../components/service.component";
+import Ads from "../components/ads.component";
 
 const HomePage = () => {
     let [blogs, setBlog] = useState(null);
@@ -269,6 +270,15 @@ const HomePage = () => {
                             <div className="mb-2">
                                 <i className="fi fi-rr-arrow-small-right text-2xl absolute"></i>
                                 <Link to='https://calendar.google.com/calendar/embed?height=400&wkst=1&bgcolor=%23db5f8e&ctz=Asia%2FBangkok&hl=en&showNav=1&showPrint=0&showCalendars=1&src=cmVnY2FsZW5kYXJAdGVhbS5jaHVsYS5hYy50aA&color=%23039BE5' target="_blank" className="text-xl hover:underline ml-6">[CUREG Calendar] ทวิภาค-ทวิภาคนานาชาติ</Link>
+                            </div>
+
+                        </div>                        
+                        <div>
+                            <h1 className="font-medium text-xl mb-8">
+                                ข่าวสาร                       
+                            </h1>
+                            <div className="mb-2">
+                                <Ads />
                             </div>
 
                         </div>                        
