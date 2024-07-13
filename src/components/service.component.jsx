@@ -55,7 +55,7 @@ const ServiceDetail = () => {
         <div className='grid w-full'>
 
                 <div className='grid px-1'>
-                    <div className='grid text-3xl font-medium leading-relaxed pb-2'>
+                    <div className='grid text-3xl font-medium leading-relaxed mb-3'>
                         บริการทั้งหมด
                     </div>
                     <div className='flex text-xl leading-relaxed pb-5'>

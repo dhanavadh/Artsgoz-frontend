@@ -16,6 +16,7 @@ import Club from "./club.page";
 import AboutGoz from "../components/goz.about.component";
 import ServiceDetail from "../components/service.component";
 import Ads from "../components/ads.component";
+import Colink from "../components/colink.component";
 
 const HomePage = () => {
     let [blogs, setBlog] = useState(null);
@@ -120,8 +121,8 @@ const HomePage = () => {
                 {/* latest blogs */}
                 <div className="w-full">
                     <InPageNavigation
-                        routes={[ pageState , "บทความยอดนิยม", "บริการ", "ชมรม", "เกี่ยวกับ ก.อศ."]}
-                        defaultHidden={["บทความยอดนิยม"]}
+                        routes={[ pageState, "บริการ", "ชมรม", "เกี่ยวกับ ก.อศ.", "อื่น ๆ"]}
+                        defaultHidden={["อื่น ๆ"]}
                     >
                         <>
                             {blogs == null ? (
@@ -149,9 +150,9 @@ const HomePage = () => {
                                 : <NoDataMessage message="ยังไม่มีบทความเผยแพร่" />
                             )}
                             <LoadMoreDataBtn state={blogs} fetchDataFun={( pageState == "หน้าแรก" ? fetchLatestBlogs : fetchBlogsByCategory )} />
-                        </>
+                        </>                        
 
-                        {trendingBlogs == null ? (
+                        {/* {trendingBlogs == null ? (
                             <Loader />
                         ) : (
                             trendingBlogs.length ?
@@ -172,7 +173,7 @@ const HomePage = () => {
                                     );
                                 })
                             : <NoDataMessage message="ยังไม่มีบทความยอดนิยม" />
-                        )}
+                        )} */}
 
                         <>
                             <AnimationWrapper
@@ -196,8 +197,38 @@ const HomePage = () => {
                             
                         </>
                         <>
-                            <AboutGoz />
+                            <AnimationWrapper
+                                transition={{
+                                    duration: 1,
+                                    delay: 0.1,
+                                }}                                
+                            >
+                                <AboutGoz />
+                            </AnimationWrapper>
+                            
                         </>
+                        <>
+                             <AnimationWrapper
+                                transition={{
+                                    duration: 1,
+                                    delay: 0.1,
+                                }}                                
+                            >
+                                <Colink />
+                                <hr className="my-5 border-grey"/>
+                                <div>
+                                    <h1 className="font-medium text-3xl my-3">
+                                        ข่าวสาร                       
+                                    </h1>
+                                    <div className="mb-2">
+                                        <Ads />
+                                    </div>
+
+                                </div>  
+                            </AnimationWrapper>
+                            
+                        </>
+                    
 
                     </InPageNavigation>
                 </div>
