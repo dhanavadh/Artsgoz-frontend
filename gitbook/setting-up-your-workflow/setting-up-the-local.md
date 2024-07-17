@@ -16,4 +16,4 @@ Don't forget to install node.js on your workstation. If not, please see [Setting
 
 ## Open the repo
 
-you can open the project in VS Code by opening Terminal (for macOS) or Command shell (for Windows) then `cd` in your project folder and type `code.` to open the project in VS Code. Then, you can use integrated terminal in the VS Code or your local terminal to run your project on the localhost by typing `npm run dev` . That's all.
+you can open the project in VS Code by opening Terminal (for macOS) or Command shell (for Windows) then `cd` in your project folder and type `code.` to open the project in VS Code. Then, you can use integrated terminal in the VS Code or your local terminal to run your project on the localhost. When the terminal is opened, you have to install the `npm i` first by typing `npm i` or `npm install` then, you can run `npm run dev` to start your job. That's all.
