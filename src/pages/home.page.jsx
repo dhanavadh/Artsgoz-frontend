@@ -18,6 +18,7 @@ import ServiceDetail from "../components/service.component";
 import Ads from "../components/ads.component";
 import Colink from "../components/colink.component";
 import PageNotFound from "./404.page";
+import PageConstruct from "./construction.page";
 
 const HomePage = () => {
     let [blogs, setBlog] = useState(null);
@@ -184,7 +185,7 @@ const HomePage = () => {
                                     delay: 0.1,
                                 }}                                
                             >
-                                <PageNotFound />
+                                <PageConstruct />
                             </AnimationWrapper>
                         </>
                         <>
