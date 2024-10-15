@@ -17,6 +17,7 @@ import AboutGoz from "../components/goz.about.component";
 import ServiceDetail from "../components/service.component";
 import Ads from "../components/ads.component";
 import Colink from "../components/colink.component";
+import PageNotFound from "./404.page";
 
 const HomePage = () => {
     let [blogs, setBlog] = useState(null);
@@ -25,6 +26,7 @@ const HomePage = () => {
 
     let categories = [
         "รีวิวรายวิชา",
+        "รีวิวฝึกงาน",
         "วิชาการ",
         "ศิลปวัฒนธรรม",
         "อักษรสารา",
@@ -121,7 +123,7 @@ const HomePage = () => {
                 {/* latest blogs */}
                 <div className="w-full">
                     <InPageNavigation
-                        routes={[ pageState, "บริการ", "ชมรม", "เกี่ยวกับ ก.อศ.", "อื่น ๆ"]}
+                        routes={[ pageState, "ฝึกงาน", "บริการ", "ชมรม", "เกี่ยวกับ ก.อศ.", "อื่น ๆ"]}
                         defaultHidden={["อื่น ๆ"]}
                     >
                         <>
@@ -175,6 +177,16 @@ const HomePage = () => {
                             : <NoDataMessage message="ยังไม่มีบทความยอดนิยม" />
                         )} */}
 
+                        <>
+                            <AnimationWrapper
+                                transition={{
+                                    duration: 1,
+                                    delay: 0.1,
+                                }}                                
+                            >
+                                <PageNotFound />
+                            </AnimationWrapper>
+                        </>
                         <>
                             <AnimationWrapper
                                 transition={{
