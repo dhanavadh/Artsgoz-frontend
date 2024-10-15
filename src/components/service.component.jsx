@@ -44,11 +44,7 @@ const BannerPartner = [
     { name: 'CU Get Reg', notice:'', description: `สามารถค้นหาและเลือกรายวิชาได้อย่างสะดวก และจัดตารางเรียนตามข้อจำกัดของหลักสูตรของแต่ละคนได้ง่ายขึ้น โดย ชมรม Thinc. จุฬาลงกรณ์มหาวิทยาลัย`, href: 'https://cugetreg.com/', target: '_blank', image: 'https://cugetreg.com/_next/static/media/cgrLogoDark.1e8c4bde.svg' },    
     { name: 'Gen อย่าได้ Ed', notice:'', description: `ศูนย์กลางการแลกเปลี่ยนข้อมูลและคำแนะนำรายวิชา Gened`, href: 'https://www.facebook.com/genedahs', target: '_blank', image: '' },        
 ]
-const unb = `underline-thickness-1 underline-offset-4 hover:underline cursor-pointer transition-colors duration-300`
-const hds = `text-xl font-medium pt-5`
-const MapList = [
-    { name: 'ค้นหาชื่ออาจารย์', description: 'ดูชื่อย่ออาจารย์ในคณะฯ ได้ที่นี่', href: '/services/staffquery', target: '',},
-]
+
 const ServiceDetail = () => {
   return (
     <div>
@@ -67,7 +63,7 @@ const ServiceDetail = () => {
                         <p className=' pb-3 pl-3'>นิสิตอักษรศาสตร์สามารถเข้ารับบริการเหล่านี้ที่ห้อง ก.อศ. ชั้น M1 อาคารมหาจักรีสิรินธร</p>
                                 <div className='grid grid-cols-1 gap-4 pb-3 pl-3'>
                                   {BannerIn.map((item) => (
-                                    <div className="flex flex-col bg-white shadow-lg  md:flex-row">
+                                    <div className="flex flex-col bg-white shadow-xl  md:flex-row">
                                     <img
                                         className="h-96 w-full object-cover md:h-auto md:w-64"
                                         src={item.image}
@@ -94,7 +90,7 @@ const ServiceDetail = () => {
                         <div className=' pb-3 pl-3'>สามารถดูบริการสำหรับนิสิตโดยมหาวิทยาลัยได้ที่นี่</div>
                                 <div className='grid grid-cols-2 gap-4 pb-3 pl-3'>
                                   {BannerIt.map((item) => (
-                                    <div className="flex flex-col bg-white shadow-lg  md:flex-row">
+                                    <div className="flex flex-col bg-white shadow-xl  md:flex-row">
                                     {/* <img
                                         className="h-96 w-full object-cover md:h-auto md:w-64"
                                         src={item.image}
@@ -122,7 +118,7 @@ const ServiceDetail = () => {
                         <div className=' pb-3 pl-3'>สามารถดูบริการด้าน IT สำหรับนิสิตได้ที่นี่</div>
                                 <div className='grid grid-cols-2 gap-4 pb-3 pl-3'>
                                   {BannerUniv.map((item) => (
-                                    <div className="flex flex-col bg-white shadow-lg  md:flex-row">
+                                    <div className="flex flex-col bg-white shadow-xl  md:flex-row">
                                     {/* <img
                                         className="h-96 w-full object-cover md:h-auto md:w-64"
                                         src={item.image}
@@ -150,7 +146,7 @@ const ServiceDetail = () => {
                         <div className=' pb-3 pl-3'>สามารถดูบริการทางการศึกษาได้ที่นี่</div>
                                 <div className='grid grid-cols-2 gap-4 pb-3 pl-3'>
                                   {BannerLearning.map((item) => (
-                                    <div className="flex flex-col bg-white shadow-lg  md:flex-row">
+                                    <div className="flex flex-col bg-white shadow-xl  md:flex-row">
                                     {/* <img
                                         className="h-96 w-full object-cover md:h-auto md:w-64"
                                         src={item.image}
@@ -178,7 +174,7 @@ const ServiceDetail = () => {
                         <div className=' pb-3 pl-3'>สามารถดูบริการสำหรับนิสิตโดยเพื่อนนิสิตได้ที่นี่</div>
                                 <div className='grid grid-cols-1 gap-4 pb-3 pl-3'>
                                   {BannerPartner.map((item) => (
-                                    <div className="flex flex-col bg-white shadow-lg  md:flex-row">
+                                    <div className="flex flex-col bg-white shadow-xl  md:flex-row">
                                     {/* <img
                                         className="h-96 w-full object-cover md:h-auto md:w-64"
                                         src={item.image}
