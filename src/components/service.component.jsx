@@ -11,13 +11,13 @@ const BannerIn = [
 ]
 const BannerIt = [
     { name: 'Adobe Creative Cloud', notice:'', description: `โปรแกรม Adobe เป็นโปรแกรมสำหรับสร้างสื่อมัลติมีเดียต่าง ๆ ประกอบด้วยชุดเครื่องมือที่เรียกว่า Adobe Creative Cloud
-    ปรับเปลี่ยนวิธีการใช้งานใหม่ เริ่มใช้งานตั้งแต่วันที่ 28 เมษายน 2566 นิสิตสามารถดูรายละเอียดเพิ่มเติมได้ที่เว็บไซต์ https://www.it.chula.ac.th/`, href: 'https://creativecloud.adobe.com/apps/all', target: '_blank', image: '' },    
-    { name: 'CUNET Account Management', notice:'* ต้องใช้งานผ่าน VPN', description: `บริการเปลี่ยนรหัสผ่าน CUNET ด้วยตนเอง/รีเซ็ตรหัสผ่านด้วยตนเอง/ตั้งคำถาม-คำตอบเพื่อใช้ในการรีเซ็ตรหัสผ่าน นิสิตสามารถดูรายละเอียดเพิ่มเติมได้ที่เว็บไซต์ https://www.it.chula.ac.th/`, href: 'https://userportal.it.chula.ac.th/', target: '_blank', image: '' },
-    { name: 'Chula Zoom', notice:'', description: `โปรแกรม Zoom เป็นโปรแกรมสำหรับการเรียนการสอน การประชุม ออนไลน์ นิสิตสามารถดูรายละเอียดเพิ่มเติมได้ที่เว็บไซต์ https://www.it.chula.ac.th/`, href: 'https://chula.zoom.us/', target: '_blank', image: '' },
-    { name: 'Cisco Anyconnect', notice:'', description: `บริการ VPN เป็นบริการที่ทำให้ใช้บริการออนไลน์ต่าง ๆ จากภายนอกมหาวิทยาลัยได้ นิสิตสามารถดูรายละเอียดเพิ่มเติมได้ที่เว็บไซต์ https://www.it.chula.ac.th/`, href: 'https://www.it.chula.ac.th/service/cunet-vpn-service/', target: '_blank', image: '' },
-    { name: 'Google Workspace', notice:'', description: `Google Workspace for Education สำหรับนิสิต และบุคลากรจุฬาฯ เป็นบริการทางเลือกในการทำงาน โดยมีเครื่องมือสำหรับทำงาน เช่น ระบบเอกสาร ระบบประชุมทางไกล ระบบเก็บข้อมูล และอื่น ๆ อีกมากมาย นิสิตสามารถดูรายละเอียดเพิ่มเติมได้ที่เว็บไซต์ https://www.it.chula.ac.th/`, href: 'https://apps.google.com/user/hub', target: '_blank', image: '' },
-    { name: 'Office 365', notice:'', description: `Microsoft 365 เป็นบริการในการทำงาน โดยมีเครื่องมือสำหรับทำงาน เช่น ระบบเอกสาร ระบบการทำงานร่วมกัน ระบบประชุมทางไกล และบริการอื่น ๆ บน Cloud ของไมโครซอฟต์ นิสิตสามารถดูรายละเอียดเพิ่มเติมได้ที่เว็บไซต์ https://www.it.chula.ac.th/`, href: 'https://login.microsoftonline.com/?whr=chula.ac.th', target: '_blank', image: '' },
-    { name: 'ระบบยืมใช้งานซอฟต์แวร์', notice:'', description: `ยืมใช้งานซอฟต์แวร์ต่าง ๆ เช่น Zoom นิสิตสามารถดูรายละเอียดเพิ่มเติมได้ที่เว็บไซต์ https://www.it.chula.ac.th/`, href: 'https://licenseportal.it.chula.ac.th/', target: '_blank', image: '' },        
+    ปรับเปลี่ยนวิธีการใช้งานใหม่ เริ่มใช้งานตั้งแต่วันที่ 28 เมษายน 2566 นิสิตสามารถดูรายละเอียดเพิ่มเติมได้ที่เว็บไซต์ https://www.it.chula.ac.th/`, href: 'https://creativecloud.adobe.com/apps/all', target: '_blank', image: 'https://www.arts.chula.ac.th/goz/asset/2024icons/cc_p.svg' },    
+    { name: 'CUNET Account Management', notice:'* ต้องใช้งานผ่าน VPN', description: `บริการเปลี่ยนรหัสผ่าน CUNET ด้วยตนเอง/รีเซ็ตรหัสผ่านด้วยตนเอง/ตั้งคำถาม-คำตอบเพื่อใช้ในการรีเซ็ตรหัสผ่าน นิสิตสามารถดูรายละเอียดเพิ่มเติมได้ที่เว็บไซต์ https://www.it.chula.ac.th/`, href: 'https://userportal.it.chula.ac.th/', target: '_blank', image: 'https://www.arts.chula.ac.th/goz/asset/2024icons/accounts_p.svg', style: '' },
+    { name: 'Chula Zoom', notice:'', description: `โปรแกรม Zoom เป็นโปรแกรมสำหรับการเรียนการสอน การประชุม ออนไลน์ นิสิตสามารถดูรายละเอียดเพิ่มเติมได้ที่เว็บไซต์ https://www.it.chula.ac.th/`, href: 'https://chula.zoom.us/', target: '_blank', image: 'https://www.arts.chula.ac.th/goz/asset/2024icons/zoom_p.svg' },
+    { name: 'Cisco Anyconnect', notice:'', description: `บริการ VPN เป็นบริการที่ทำให้ใช้บริการออนไลน์ต่าง ๆ จากภายนอกมหาวิทยาลัยได้ นิสิตสามารถดูรายละเอียดเพิ่มเติมได้ที่เว็บไซต์ https://www.it.chula.ac.th/`, href: 'https://www.it.chula.ac.th/service/cunet-vpn-service/', target: '_blank', image: 'https://www.arts.chula.ac.th/goz/asset/2024icons/cisco_p.svg' },
+    { name: 'Google Workspace', notice:'', description: `Google Workspace for Education สำหรับนิสิต และบุคลากรจุฬาฯ เป็นบริการทางเลือกในการทำงาน โดยมีเครื่องมือสำหรับทำงาน เช่น ระบบเอกสาร ระบบประชุมทางไกล ระบบเก็บข้อมูล และอื่น ๆ อีกมากมาย นิสิตสามารถดูรายละเอียดเพิ่มเติมได้ที่เว็บไซต์ https://www.it.chula.ac.th/`, href: 'https://apps.google.com/user/hub', target: '_blank', image: 'https://www.arts.chula.ac.th/goz/asset/2024icons/assignment_p.svg' },
+    { name: 'Office 365', notice:'', description: `Microsoft 365 เป็นบริการในการทำงาน โดยมีเครื่องมือสำหรับทำงาน เช่น ระบบเอกสาร ระบบการทำงานร่วมกัน ระบบประชุมทางไกล และบริการอื่น ๆ บน Cloud ของไมโครซอฟต์ นิสิตสามารถดูรายละเอียดเพิ่มเติมได้ที่เว็บไซต์ https://www.it.chula.ac.th/`, href: 'https://login.microsoftonline.com/?whr=chula.ac.th', target: '_blank', image: 'https://www.arts.chula.ac.th/goz/asset/2024icons/jot_p.svg' },
+    { name: 'ระบบยืมใช้งานซอฟต์แวร์', notice:'', description: `ยืมใช้งานซอฟต์แวร์ต่าง ๆ เช่น Zoom นิสิตสามารถดูรายละเอียดเพิ่มเติมได้ที่เว็บไซต์ https://www.it.chula.ac.th/`, href: 'https://licenseportal.it.chula.ac.th/', target: '_blank', image: 'https://www.arts.chula.ac.th/goz/asset/2024icons/sdk_p.svg' },        
     
 ]
 const BannerUniv = [
@@ -63,9 +63,9 @@ const ServiceDetail = () => {
                         <p className=' pb-3 pl-3'>นิสิตอักษรศาสตร์สามารถเข้ารับบริการเหล่านี้ที่ห้อง ก.อศ. ชั้น M1 อาคารมหาจักรีสิรินธร</p>
                                 <div className='grid grid-cols-1 gap-4 pb-3 pl-3'>
                                   {BannerIn.map((item) => (
-                                    <div className="flex flex-col bg-white shadow-xl  md:flex-row">
+                                    <div className="flex flex-col bg-white shadow-xl  md:flex-row" key={item.name}>
                                     <img
-                                        className="h-96 w-full object-cover md:h-auto md:w-64"
+                                        className="h-96 w-full object-cover md:h-auto md:w-32"
                                         src={item.image}
                                         alt="" />
                                     <div className="flex flex-col justify-start p-6">
@@ -88,23 +88,22 @@ const ServiceDetail = () => {
                     <div className='grid'>
                         <div className='text-2xl pb-3 font-medium'>บริการจาก IT Chula</div>
                         <div className=' pb-3 pl-3'>สามารถดูบริการสำหรับนิสิตโดยมหาวิทยาลัยได้ที่นี่</div>
-                                <div className='grid grid-cols-2 gap-4 pb-3 pl-3'>
+                                <div className='grid grid-cols-1 gap-4 pb-3 pl-3'>
                                   {BannerIt.map((item) => (
-                                    <div className="flex flex-col bg-white shadow-xl  md:flex-row">
-                                    {/* <img
-                                        className="h-96 w-full object-cover md:h-auto md:w-64"
-                                        src={item.image}
-                                        alt="" /> */}
-                                    <div className="flex flex-col justify-start p-6">
-                                        <a
-                                        className="mb-2 text-xl font-medium  underline decoration-pink-500 decoration-4 hover:decoration-blue-500 underline-offset-4 cursor-pointer"
-                                        href={item.href} target={item.target}>
-                                        {item.name}
-                                        </a>
-                                        <a className='mb-3 text-md font-medium text-pink-500'>{item.notice}</a>
-                                        <p className="mb-5 text-base  text-ellipsis overflow-hidden">
-                                        {item.description}
-                                        </p>
+                                    <div className="flex flex-col bg-white shadow-xl border border-2 border-white md:flex-row" key={item.name}>
+                                    <div className="flex justify-start p-6">
+                                        <img src={item.image} className="h-12 w-12 mr-5"></img>
+                                        <div className="flex flex-col">
+                                          <a
+                                          className="mb-1 text-xl font-medium  underline decoration-pink-500 decoration-4 hover:decoration-blue-500 underline-offset-4 cursor-pointer"
+                                          href={item.href} target={item.target}>
+                                          {item.name}
+                                          </a>
+                                          <a className='mb-2 text-md font-medium text-pink-500'>{item.notice}</a>
+                                          <p className="mb-1 text-base  text-ellipsis overflow-hidden">
+                                          {item.description}
+                                          </p>
+                                        </div>
                                     </div>
                                     </div>
                                   ))}
@@ -118,7 +117,7 @@ const ServiceDetail = () => {
                         <div className=' pb-3 pl-3'>สามารถดูบริการด้าน IT สำหรับนิสิตได้ที่นี่</div>
                                 <div className='grid grid-cols-2 gap-4 pb-3 pl-3'>
                                   {BannerUniv.map((item) => (
-                                    <div className="flex flex-col bg-white shadow-xl  md:flex-row">
+                                    <div className="flex flex-col bg-white shadow-xl  md:flex-row" key={item.name}>
                                     {/* <img
                                         className="h-96 w-full object-cover md:h-auto md:w-64"
                                         src={item.image}
@@ -146,7 +145,7 @@ const ServiceDetail = () => {
                         <div className=' pb-3 pl-3'>สามารถดูบริการทางการศึกษาได้ที่นี่</div>
                                 <div className='grid grid-cols-2 gap-4 pb-3 pl-3'>
                                   {BannerLearning.map((item) => (
-                                    <div className="flex flex-col bg-white shadow-xl  md:flex-row">
+                                    <div className="flex flex-col bg-white shadow-xl  md:flex-row" key={item.name}>
                                     {/* <img
                                         className="h-96 w-full object-cover md:h-auto md:w-64"
                                         src={item.image}
@@ -174,7 +173,7 @@ const ServiceDetail = () => {
                         <div className=' pb-3 pl-3'>สามารถดูบริการสำหรับนิสิตโดยเพื่อนนิสิตได้ที่นี่</div>
                                 <div className='grid grid-cols-1 gap-4 pb-3 pl-3'>
                                   {BannerPartner.map((item) => (
-                                    <div className="flex flex-col bg-white shadow-xl  md:flex-row">
+                                    <div className="flex flex-col bg-white shadow-xl  md:flex-row" key={item.name}>
                                     {/* <img
                                         className="h-96 w-full object-cover md:h-auto md:w-64"
                                         src={item.image}
