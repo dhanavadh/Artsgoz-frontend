@@ -33,16 +33,16 @@ const BannerLearning = [
     { name: 'CHULA MOOC', notice:'', description: `การเรียนการสอนออนไลน์ในระบบเปิดสำหรับมหาชน (Massive Open Online Course : MOOC) ภายใต้โครงการ CHULA MOOC`, href: 'https://mooc.chula.ac.th', target: '_blank', image: 'https://www.arts.chula.ac.th/goz/asset/2024icons/services/mooc.png' },        
     { name: 'Chula Reference Databases', notice:'', description: `บริการฐานข้อมูลทางวิชาการ นิสิตสามารถเข้าใช้งานได้เพียงใช้ CUNET Account ในการเข้าใช้งาน`, href: 'https://www.car.chula.ac.th/curef.php', target: '_blank', image: 'https://www.arts.chula.ac.th/goz/asset/2024icons/services/chulaservice.png' },    
     { name: 'CU CAS', notice:'* ปัจจุบันสามารถประเมินได้ผ่านทาง myCourseVille', description: `ระบบประเมินการสอน`, href: 'https://cas.chula.ac.th/cas/', target: '_blank', image: 'https://www.arts.chula.ac.th/goz/asset/2024icons/services/chulaservice.png' },        
-    { name: 'Endnote', notice:'', description: `โปรแกรมสำเร็จรูปที่ใช้ในการจัดการกับรายการทางบรรณานุกรม หรือรายการอ้างอิงที่ผู้ใช้ได้ไปสืบค้นมาจากแหล่งข้อมูลต่าง ๆ โดยสำนักงานวิทยทรัพยากร`, href: 'https://www.car.chula.ac.th/endnote.php', target: '_blank', image: '' },    
-    { name: 'Mendeley MIE Version', notice:'', description: `สำนักงานวิทยทรัพยากร จุฬาฯ ได้รับสิทธิ์การใช้งาน Mendeley Institutional Edition ซึ่งเป็นเวอร์ชั่น Premium upgrades สามารถใช้งานได้เพิ่มขึ้นจาก Mendeley เวอร์ชันปกติที่ไม่มีค่าใช้จ่าย`, href: 'https://www.car.chula.ac.th/mendeley.php', target: '_blank', image: '' },    
-    { name: 'Turnitin', notice:'', description: `For instructor who need to use Turnitin, please fill out the request form to https://forms.gle/kvJ2PW1Mx5n9xYue7.`, href: 'https://www.car.chula.ac.th/turnitin.php', target: '_blank', image: '' },    
+    { name: 'Endnote', notice:'', description: `โปรแกรมสำเร็จรูปที่ใช้ในการจัดการกับรายการทางบรรณานุกรม หรือรายการอ้างอิงที่ผู้ใช้ได้ไปสืบค้นมาจากแหล่งข้อมูลต่าง ๆ โดยสำนักงานวิทยทรัพยากร`, href: 'https://www.car.chula.ac.th/endnote.php', target: '_blank', image: 'https://www.arts.chula.ac.th/goz/asset/2024icons/services/EndNote.png' },    
+    { name: 'Mendeley MIE Version', notice:'', description: `สำนักงานวิทยทรัพยากร จุฬาฯ ได้รับสิทธิ์การใช้งาน Mendeley Institutional Edition ซึ่งเป็นเวอร์ชั่น Premium upgrades สามารถใช้งานได้เพิ่มขึ้นจาก Mendeley เวอร์ชันปกติที่ไม่มีค่าใช้จ่าย`, href: 'https://www.car.chula.ac.th/mendeley.php', target: '_blank', image: 'https://upload.wikimedia.org/wikipedia/commons/8/81/Mendeley_Logo_Vertical.png' },    
+    { name: 'Turnitin', notice:'', description: `For instructor who need to use Turnitin, please fill out the request form to https://forms.gle/kvJ2PW1Mx5n9xYue7.`, href: 'https://www.car.chula.ac.th/turnitin.php', target: '_blank', image: 'https://www.arts.chula.ac.th/goz/asset/2024icons/services/turnitin.svg' },    
     { name: 'อักขราวิสุทธิ์', notice:'', description: `ระบบตรวจสอบการลอกเลียนวรรณกรรมทางวิชาการ โดย จุฬาลงกรณ์มหาวิทยาลัย`, href: 'https://app.akarawisut.com', target: '_blank', image: 'https://www.arts.chula.ac.th/goz/asset/2024icons/services/akara.png' },    
-    { name: 'SciVal', notice:'', description: `ฐานข้อมูลที่ผู้ใช้สามารถเข้าถึงข้อมูลศักยภาพการวิจัย ทั้งในระดับโลก ระดับประเทศ ระดับมหาวิทยาลัย หรือระดับนักวิจัย สามารถดูข้อมูลการเปรียบเทียบศักยภาพการวิจัย รวมถึงข้อมูลความร่วมมือด้านการวิจัย`, href: 'https://www.car.chula.ac.th/scival.php', target: '_blank', image: '' },    
+    { name: 'SciVal', notice:'', description: `ฐานข้อมูลที่ผู้ใช้สามารถเข้าถึงข้อมูลศักยภาพการวิจัย ทั้งในระดับโลก ระดับประเทศ ระดับมหาวิทยาลัย หรือระดับนักวิจัย สามารถดูข้อมูลการเปรียบเทียบศักยภาพการวิจัย รวมถึงข้อมูลความร่วมมือด้านการวิจัย`, href: 'https://www.car.chula.ac.th/scival.php', target: '_blank', image: 'https://www.arts.chula.ac.th/goz/asset/2024icons/services/scival.svg' },    
     
 ]
 const BannerPartner = [
-    { name: 'CU Get Reg', notice:'', description: `สามารถค้นหาและเลือกรายวิชาได้อย่างสะดวก และจัดตารางเรียนตามข้อจำกัดของหลักสูตรของแต่ละคนได้ง่ายขึ้น โดย ชมรม Thinc. จุฬาลงกรณ์มหาวิทยาลัย`, href: 'https://cugetreg.com/', target: '_blank', image: 'https://cugetreg.com/_next/static/media/cgrLogoDark.1e8c4bde.svg' },    
-    { name: 'Gen อย่าได้ Ed', notice:'', description: `ศูนย์กลางการแลกเปลี่ยนข้อมูลและคำแนะนำรายวิชา Gened`, href: 'https://www.facebook.com/genedahs', target: '_blank', image: '' },        
+    { name: 'CU Get Reg', notice:'', description: `สามารถค้นหาและเลือกรายวิชาได้อย่างสะดวก และจัดตารางเรียนตามข้อจำกัดของหลักสูตรของแต่ละคนได้ง่ายขึ้น โดย ชมรม Thinc. จุฬาลงกรณ์มหาวิทยาลัย`, href: 'https://cugetreg.com/', target: '_blank', image: 'https://www.arts.chula.ac.th/goz/asset/2024icons/services/cugetreg.svg' },    
+    { name: 'Gen อย่าได้ Ed', notice:'', description: `ศูนย์กลางการแลกเปลี่ยนข้อมูลและคำแนะนำรายวิชา Gened`, href: 'https://www.facebook.com/genedahs', target: '_blank', image: 'https://www.arts.chula.ac.th/goz/asset/2024icons/services/genedahs.jpg' },        
 ]
 
 const ServiceDetail = () => {
@@ -146,7 +146,7 @@ const ServiceDetail = () => {
                                   {BannerLearning.map((item) => (
                                     <div className="flex flex-col bg-white drop-shadow-2xl border border-2 border-white md:flex-row" key={item.name}>
                                     <div className="flex justify-start p-6">
-                                        <img src={item.image} className="h-12 w-12 mr-5"></img>
+                                        <img src={item.image} className="h-12 w-12 mr-5 rounded-md"></img>
                                         <div className="flex flex-col">
                                           <a
                                           className="mb-1 text-xl font-medium  underline decoration-pink-500 decoration-4 hover:decoration-blue-500 underline-offset-4 cursor-pointer"
@@ -169,27 +169,26 @@ const ServiceDetail = () => {
                     <div className='grid'>
                         <div className='text-2xl pb-3 font-medium'>บริการอื่น ๆ จากเพื่อนนิสิต</div>
                         <div className=' pb-3 pl-3'>สามารถดูบริการสำหรับนิสิตโดยเพื่อนนิสิตได้ที่นี่</div>
-                                <div className='grid grid-cols-1 gap-4 pb-3 pl-3'>
+                        <div className='grid grid-cols-1 gap-4 pb-3 pl-3'>
                                   {BannerPartner.map((item) => (
-                                    <div className="flex flex-col bg-white shadow-xl  md:flex-row" key={item.name}>
-                                    {/* <img
-                                        className="h-96 w-full object-cover md:h-auto md:w-64"
-                                        src={item.image}
-                                        alt="" /> */}
-                                    <div className="flex flex-col justify-start p-6">
-                                        <a
-                                        className="mb-2 text-xl font-medium  underline decoration-pink-500 decoration-4 hover:decoration-blue-500 underline-offset-4 cursor-pointer"
-                                        href={item.href} target={item.target}>
-                                        {item.name}
-                                        </a>
-                                        <a className='mb-3 text-md font-medium text-pink-500'>{item.notice}</a>
-                                        <p className="mb-5 text-base  text-ellipsis overflow-hidden">
-                                        {item.description}
-                                        </p>
+                                    <div className="flex flex-col bg-white drop-shadow-2xl border border-2 border-white md:flex-row" key={item.name}>
+                                    <div className="flex justify-start p-6">
+                                        <img src={item.image} className="h-12 w-12 mr-5 rounded-md"></img>
+                                        <div className="flex flex-col">
+                                          <a
+                                          className="mb-1 text-xl font-medium  underline decoration-pink-500 decoration-4 hover:decoration-blue-500 underline-offset-4 cursor-pointer"
+                                          href={item.href} target={item.target}>
+                                          {item.name}
+                                          </a>
+                                          <a className='mb-2 text-md font-medium text-pink-500'>{item.notice}</a>
+                                          <p className="mb-1 text-base  text-ellipsis overflow-hidden">
+                                          {item.description}
+                                          </p>
+                                        </div>
                                     </div>
                                     </div>
                                   ))}
-                                </div>                                
+                                </div>                           
                                 
                         </div>                                            
                         <div className='pb-5'>
