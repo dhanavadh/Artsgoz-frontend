@@ -29,14 +29,14 @@ const BannerUniv = [
 ]
 const BannerLearning = [
     { name: 'myCourseVille', notice:'', description: `ระบบการจัดการการเรียนการสอน (Learning Management System: LMS) ที่เชื่อมต่อกับสังคมออนไลน์`, href: 'http://mycourseville.com', target: '_blank', image: 'https://www.arts.chula.ac.th/goz/asset/2024icons/services/mcv.png' },    
-    { name: 'myCourseVille Alpha', notice:'', description: `ระบบการจัดการการเรียนการสอน (Learning Management System: LMS) ที่เชื่อมต่อกับสังคมออนไลน์`, href: 'https://alpha.mycourseville.com/', target: '_blank', image: 'https://www.arts.chula.ac.th/goz/asset/2024icons/services/mcvalpha.svg' },    
-    { name: 'CHULA MOOC', notice:'', description: `การเรียนการสอนออนไลน์ในระบบเปิดสำหรับมหาชน (Massive Open Online Course : MOOC) ภายใต้โครงการ CHULA MOOC`, href: 'https://mooc.chula.ac.th', target: '_blank', image: 'https://www.arts.chula.ac.th/goz/asset/2024icons/services/mooc.svg' },        
+    { name: 'myCourseVille Alpha', notice:'', description: `ระบบการจัดการการเรียนการสอน (Learning Management System: LMS) ที่เชื่อมต่อกับสังคมออนไลน์`, href: 'https://alpha.mycourseville.com/', target: '_blank', image: 'https://www.arts.chula.ac.th/goz/asset/2024icons/services/mcvalpha.png' },    
+    { name: 'CHULA MOOC', notice:'', description: `การเรียนการสอนออนไลน์ในระบบเปิดสำหรับมหาชน (Massive Open Online Course : MOOC) ภายใต้โครงการ CHULA MOOC`, href: 'https://mooc.chula.ac.th', target: '_blank', image: 'https://www.arts.chula.ac.th/goz/asset/2024icons/services/mooc.png' },        
     { name: 'Chula Reference Databases', notice:'', description: `บริการฐานข้อมูลทางวิชาการ นิสิตสามารถเข้าใช้งานได้เพียงใช้ CUNET Account ในการเข้าใช้งาน`, href: 'https://www.car.chula.ac.th/curef.php', target: '_blank', image: 'https://www.arts.chula.ac.th/goz/asset/2024icons/services/chulaservice.png' },    
     { name: 'CU CAS', notice:'* ปัจจุบันสามารถประเมินได้ผ่านทาง myCourseVille', description: `ระบบประเมินการสอน`, href: 'https://cas.chula.ac.th/cas/', target: '_blank', image: 'https://www.arts.chula.ac.th/goz/asset/2024icons/services/chulaservice.png' },        
     { name: 'Endnote', notice:'', description: `โปรแกรมสำเร็จรูปที่ใช้ในการจัดการกับรายการทางบรรณานุกรม หรือรายการอ้างอิงที่ผู้ใช้ได้ไปสืบค้นมาจากแหล่งข้อมูลต่าง ๆ โดยสำนักงานวิทยทรัพยากร`, href: 'https://www.car.chula.ac.th/endnote.php', target: '_blank', image: '' },    
     { name: 'Mendeley MIE Version', notice:'', description: `สำนักงานวิทยทรัพยากร จุฬาฯ ได้รับสิทธิ์การใช้งาน Mendeley Institutional Edition ซึ่งเป็นเวอร์ชั่น Premium upgrades สามารถใช้งานได้เพิ่มขึ้นจาก Mendeley เวอร์ชันปกติที่ไม่มีค่าใช้จ่าย`, href: 'https://www.car.chula.ac.th/mendeley.php', target: '_blank', image: '' },    
     { name: 'Turnitin', notice:'', description: `For instructor who need to use Turnitin, please fill out the request form to https://forms.gle/kvJ2PW1Mx5n9xYue7.`, href: 'https://www.car.chula.ac.th/turnitin.php', target: '_blank', image: '' },    
-    { name: 'อักขราวิสุทธิ์', notice:'', description: `ระบบตรวจสอบการลอกเลียนวรรณกรรมทางวิชาการ โดย จุฬาลงกรณ์มหาวิทยาลัย`, href: 'https://app.akarawisut.com', target: '_blank', image: '' },    
+    { name: 'อักขราวิสุทธิ์', notice:'', description: `ระบบตรวจสอบการลอกเลียนวรรณกรรมทางวิชาการ โดย จุฬาลงกรณ์มหาวิทยาลัย`, href: 'https://app.akarawisut.com', target: '_blank', image: 'https://www.arts.chula.ac.th/goz/asset/2024icons/services/akara.png' },    
     { name: 'SciVal', notice:'', description: `ฐานข้อมูลที่ผู้ใช้สามารถเข้าถึงข้อมูลศักยภาพการวิจัย ทั้งในระดับโลก ระดับประเทศ ระดับมหาวิทยาลัย หรือระดับนักวิจัย สามารถดูข้อมูลการเปรียบเทียบศักยภาพการวิจัย รวมถึงข้อมูลความร่วมมือด้านการวิจัย`, href: 'https://www.car.chula.ac.th/scival.php', target: '_blank', image: '' },    
     
 ]
@@ -115,7 +115,7 @@ const ServiceDetail = () => {
                     <div className='grid'>
                         <div className='text-2xl pb-3 font-medium'>บริการจากมหาวิทยาลัย</div>
                         <div className=' pb-3 pl-3'>สามารถดูบริการด้าน IT สำหรับนิสิตได้ที่นี่</div>
-                                <div className='grid grid-cols-2 md:grid-cols-1 gap-4 pb-3 pl-3'>
+                        <div className='grid grid-cols-1 gap-4 pb-3 pl-3'>
                                   {BannerUniv.map((item) => (
                                     <div className="flex flex-col bg-white drop-shadow-2xl border border-2 border-white md:flex-row" key={item.name}>
                                     <div className="flex justify-start p-6">
@@ -142,7 +142,7 @@ const ServiceDetail = () => {
                     <div className='grid'>
                         <div className='text-2xl pb-3 font-medium'>บริการทางการศึกษา</div>
                         <div className=' pb-3 pl-3'>สามารถดูบริการทางการศึกษาได้ที่นี่</div>
-                                <div className='grid grid-cols-2 md:grid-cols-1 gap-4 pb-3 pl-3'>
+                        <div className='grid grid-cols-1 gap-4 pb-3 pl-3'>
                                   {BannerLearning.map((item) => (
                                     <div className="flex flex-col bg-white drop-shadow-2xl border border-2 border-white md:flex-row" key={item.name}>
                                     <div className="flex justify-start p-6">
@@ -161,7 +161,7 @@ const ServiceDetail = () => {
                                     </div>
                                     </div>
                                   ))}
-                                </div>                                
+                                </div>                              
                         </div>                                            
                         <div className='pb-5'>
                     </div>
