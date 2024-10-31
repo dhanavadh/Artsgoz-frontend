@@ -53,6 +53,10 @@
         @apply whitespace-nowrap bg-white text-black border-2 border-black py-1 px-3 text-xl capitalize hover:bg-black hover:text-white;
     }
 
+    .btn-dark-1{
+        @apply whitespace-nowrap bg-black text-white border-2 border-black rounded-full py-1 px-3 text-xl capitalize hover:shadow-xl;
+    }
+
     .btn-light{
         @apply btn-dark;
     }
