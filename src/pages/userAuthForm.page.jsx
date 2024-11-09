@@ -113,10 +113,8 @@ const UserAuthForm = ({ type }) => {
             <section className="h-cover flex items-center justify-center">
                 <Toaster />
                 <form id="formElement" className="w-[80%] max-w-[400px]">
-                    <Link to='/'>
-                        <img src={ theme == "light" ? darkLogo : lightLogo } className="h-18" />
-                    </Link>
-                    <h1 className="text-2xl text-center mb-12 mt-12">
+                    
+                    <h1 className="text-2xl text-center mb-12">
                         {type == "sign-in" ? "เข้าสู่ระบบ" : "ลงทะเบียน" }
                     </h1>
 
