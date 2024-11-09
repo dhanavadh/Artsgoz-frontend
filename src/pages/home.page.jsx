@@ -117,7 +117,6 @@ const HomePage = () => {
 
     return (
         <>
-            <HomeBanner />
             <AnimationWrapper>
             
             <section className="h-cover flex justify-center gap-10">
