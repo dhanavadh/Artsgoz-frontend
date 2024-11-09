@@ -1,0 +1,62 @@
+.navbar-active {
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-around; 
+    padding-top: 1rem; /* 16px */
+    padding-bottom: 1rem; /* 16px */ 
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 10;
+    color: #1F1F1F;
+    
+}
+.navbar {
+    display: flex;
+    justify-content: space-around; 
+    padding-top: 1rem; /* 16px */
+    padding-bottom: 1rem; /* 16px */ 
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 10;
+}
+.btn {
+    display: flex;
+    border-color: #F2F2F2;
+    color: #F2F2F2;
+    padding-left: 0.5rem; /* 8px */
+    padding-right: 0.5rem; /* 8px */
+    padding-top: 0.25rem; /* 4px */
+    padding-bottom: 0.25rem; /* 4px */
+    border-width: 2px;
+    text-underline-offset: 4px;
+
+}
+.btn-active {
+    display: flex;
+    border-color: #1F1F1F;
+    color: #1F1F1F;
+    padding-left: 0.5rem; /* 8px */
+    padding-right: 0.5rem; /* 8px */
+    padding-top: 0.25rem; /* 4px */
+    padding-bottom: 0.25rem; /* 4px */
+    border-width: 2px;
+    text-underline-offset: 4px;
+}
+.btn-active {
+    border-color: #1F1F1F;
+    color: #1F1F1F;
+}
+
+.navtxt{
+    color: #F2F2F2;
+    background-color: #1F1F1F;
+}
+.navtxt-active{
+    color: #1F1F1F;   
+}

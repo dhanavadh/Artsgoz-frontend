@@ -120,6 +120,91 @@ const HomePage = () => {
             <AnimationWrapper>
             
             <section className="h-cover flex justify-center gap-10">
+                {/* filters and trending blogs */}
+                <div className="min-w-[40%] lg:min-w-[400px] max-w-min border-l border-grey pl-8 pt-3 max-md:hidden">
+                    <div className="flex flex-col gap-10">
+                        <div>
+                            <h1 className="font-medium text-xl mb-8">
+                                ข่าวสาร                       
+                            </h1>
+                            <div className="mb-5">
+                                <Ads />
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <h1 className="font-medium text-xl mb-8">
+                                เลือกดูตามแท็ก
+                            </h1>
+
+                            <div className="flex gap-3 flex-wrap">
+                                {categories.map((category, i) => {
+                                    return (
+                                        <button onClick={loadBlogByCategory} className={"tag " + (pageState == category ? "bg-black text-white " : "")} 
+                                        key={i}>
+                                            {category}
+                                        </button>
+                                    );
+                                })}
+                            </div>
+                        </div>
+
+                        <div>
+                            <h1 className="font-medium text-xl mb-8">
+                                บทความยอดนิยม
+                                
+                            </h1>
+
+                            {trendingBlogs == null ? (
+                                <Loader />
+                            ) : (
+                                trendingBlogs.length ? 
+                                    trendingBlogs.map((blog, i) => {
+                                        return (
+                                            <AnimationWrapper
+                                                transition={{
+                                                    duration: 1,
+                                                    delay: i * 0.1,
+                                                }}
+                                                key={i}
+                                            >
+                                                <MinimalBlogPost
+                                                    blog={blog}
+                                                    index={i}
+                                                />
+                                            </AnimationWrapper>
+                                        );
+                                    })
+                                : <NoDataMessage message="ยังไม่มีบทความยอดนิยม" />
+                            )}
+                        </div>
+                        <div>
+                            <h1 className="font-medium text-xl mb-8">
+                                เว็บไซต์ที่เกี่ยวข้อง                            
+                            </h1>
+                            <div className="mb-2">
+                                <i className="fi fi-rr-arrow-small-right text-2xl absolute"></i>
+                                <Link to='https://www.arts.chula.ac.th/th/' target="_blank" className="text-xl hover:underline ml-6">คณะอักษรศาสตร์</Link>
+                            </div>
+                            <div className="mb-2">
+                                <i className="fi fi-rr-arrow-small-right text-2xl absolute"></i>
+                                <Link to='https://sites.google.com/view/regartscu/' target="_blank" className="text-xl hover:underline ml-6">งานทะเบียนคณะอักษรศาสตร์</Link>
+                            </div>
+                            <div className="mb-2">
+                                <i className="fi fi-rr-arrow-small-right text-2xl absolute"></i>
+                                <Link to='https://www.reg.chula.ac.th/th/' target="_blank" className="text-xl hover:underline ml-6">สำนักงานทะเบียน</Link>
+                            </div>
+                            <div className="mb-2">
+                                <i className="fi fi-rr-arrow-small-right text-2xl absolute"></i>
+                                <Link to='https://calendar.google.com/calendar/embed?height=400&wkst=1&bgcolor=%23db5f8e&ctz=Asia%2FBangkok&hl=en&showNav=1&showPrint=0&showCalendars=1&src=cmVnY2FsZW5kYXJAdGVhbS5jaHVsYS5hYy50aA&color=%23039BE5' target="_blank" className="text-xl hover:underline ml-6">[CUREG Calendar] ทวิภาค-ทวิภาคนานาชาติ</Link>
+                            </div>
+
+                        </div>                        
+                                                
+                    </div>
+                </div>
+
                 {/* latest blogs */}
                 <div className="w-full">
                     <InPageNavigation
@@ -245,88 +330,7 @@ const HomePage = () => {
                     </InPageNavigation>
                 </div>
 
-                {/* filters and trending blogs */}
-                <div className="min-w-[40%] lg:min-w-[400px] max-w-min border-l border-grey pl-8 pt-3 max-md:hidden">
-                    <div className="flex flex-col gap-10">
-                        <div>
-                            <h1 className="font-medium text-xl mb-8">
-                                เลือกดูตามแท็ก
-                            </h1>
-
-                            <div className="flex gap-3 flex-wrap">
-                                {categories.map((category, i) => {
-                                    return (
-                                        <button onClick={loadBlogByCategory} className={"tag " + (pageState == category ? "bg-black text-white " : "")} 
-                                        key={i}>
-                                            {category}
-                                        </button>
-                                    );
-                                })}
-                            </div>
-                        </div>
-
-                        <div>
-                            <h1 className="font-medium text-xl mb-8">
-                                บทความยอดนิยม
-                                
-                            </h1>
-
-                            {trendingBlogs == null ? (
-                                <Loader />
-                            ) : (
-                                trendingBlogs.length ? 
-                                    trendingBlogs.map((blog, i) => {
-                                        return (
-                                            <AnimationWrapper
-                                                transition={{
-                                                    duration: 1,
-                                                    delay: i * 0.1,
-                                                }}
-                                                key={i}
-                                            >
-                                                <MinimalBlogPost
-                                                    blog={blog}
-                                                    index={i}
-                                                />
-                                            </AnimationWrapper>
-                                        );
-                                    })
-                                : <NoDataMessage message="ยังไม่มีบทความยอดนิยม" />
-                            )}
-                        </div>
-                        <div>
-                            <h1 className="font-medium text-xl mb-8">
-                                เว็บไซต์ที่เกี่ยวข้อง                            
-                            </h1>
-                            <div className="mb-2">
-                                <i className="fi fi-rr-arrow-small-right text-2xl absolute"></i>
-                                <Link to='https://www.arts.chula.ac.th/th/' target="_blank" className="text-xl hover:underline ml-6">คณะอักษรศาสตร์</Link>
-                            </div>
-                            <div className="mb-2">
-                                <i className="fi fi-rr-arrow-small-right text-2xl absolute"></i>
-                                <Link to='https://sites.google.com/view/regartscu/' target="_blank" className="text-xl hover:underline ml-6">งานทะเบียนคณะอักษรศาสตร์</Link>
-                            </div>
-                            <div className="mb-2">
-                                <i className="fi fi-rr-arrow-small-right text-2xl absolute"></i>
-                                <Link to='https://www.reg.chula.ac.th/th/' target="_blank" className="text-xl hover:underline ml-6">สำนักงานทะเบียน</Link>
-                            </div>
-                            <div className="mb-2">
-                                <i className="fi fi-rr-arrow-small-right text-2xl absolute"></i>
-                                <Link to='https://calendar.google.com/calendar/embed?height=400&wkst=1&bgcolor=%23db5f8e&ctz=Asia%2FBangkok&hl=en&showNav=1&showPrint=0&showCalendars=1&src=cmVnY2FsZW5kYXJAdGVhbS5jaHVsYS5hYy50aA&color=%23039BE5' target="_blank" className="text-xl hover:underline ml-6">[CUREG Calendar] ทวิภาค-ทวิภาคนานาชาติ</Link>
-                            </div>
-
-                        </div>                        
-                        <div>
-                            <h1 className="font-medium text-xl mb-8">
-                                ข่าวสาร                       
-                            </h1>
-                            <div className="mb-2">
-                                <Ads />
-                            </div>
-
-                        </div>                        
-                    </div>
-                </div>
+                
             </section>
             <Footer />
             </AnimationWrapper>
