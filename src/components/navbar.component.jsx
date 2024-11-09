@@ -125,7 +125,7 @@ const Navbar = () => {
                         <input 
                             type="text"
                             placeholder="ค้นหาบทความ/ชื่ออาจารย์"
-                            className="w-full md:w-auto bg-grey p-4 pl-6 pr-[12%] md:pr-6 placeholder:text-dark-grey md:pl-12 rounded-full"
+                            className="w-full md:w-auto bg-grey p-4 pl-6 pr-[12%] md:pr-6 placeholder:text-dark-grey md:pl-12"
                             onKeyDown={handleSearch}
                         />
 
@@ -160,12 +160,12 @@ const Navbar = () => {
                         :
                         <>
                             <div className="hidden md:flex">
-                                <Link className="btn-dark-1" to="/signin">
+                                <Link className="btn-dark" to="/signin">
                                 เข้าสู่ระบบ                     
                                 </Link>
                             </div>
                             <Link to='/signin'>
-                                <button  className="md:hidden bg-grey w-12 h-12 rounded-full flex items-center justify-center">
+                                <button  className="md:hidden bg-grey w-12 h-12 flex items-center justify-center">
                                     <i className="fi fi-rr-user text-2xl block mt-1"></i>
                                 </button>
                             </Link>
