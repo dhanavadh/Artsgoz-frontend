@@ -77,6 +77,10 @@
         @apply text-dark-grey hover:text-black hover:underline hover:underline-offset-4 p-3 px-4 block opacity-75;
     }
 
+    .link2{
+        @apply text-black hover:text-black hover:underline hover:underline-offset-4 p-3 px-4 block opacity-75;
+    }
+
     .hide{
         @apply opacity-0 pointer-events-none duration-100;
     }
