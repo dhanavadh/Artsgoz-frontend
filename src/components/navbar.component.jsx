@@ -87,7 +87,7 @@ const Navbar = () => {
                         <img src={ theme == "light" ? darkLogo : lightLogo } className="" />                    
                     </Link>
                 </div>
-                <div className="flex">                    
+                <div className="hidden md:flex">                    
                         <Link to="/" className="flex link2">
                             หน้าแรก
                         </Link>
