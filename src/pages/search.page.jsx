@@ -106,7 +106,7 @@ const SearchPage = () => {
 
     return (
         <section className="h-cover flex justify-center gap-10">
-            <div className="min-w-[40%] lg:min-w-[350px] max-w-min border-l border-grey pl-8 pt-3 max-md:hidden">
+            <div className="min-w-[40%] lg:min-w-[350px] max-w-min border-r border-grey pr-8 pt-3 max-md:hidden">
 
                 <h1 className="font-medium text-xl mb-8">ผู้ใช้ที่เกี่ยวข้อง <i className="fi fi-rr-user mt-1"></i></h1>  
 

@@ -19,6 +19,7 @@ import Ads from "../components/ads.component";
 import Colink from "../components/colink.component";
 import PageNotFound from "./404.page";
 import PageConstruct from "./construction.page";
+import Banner from "../components/banner-fetch.component";
 
 const HomePage = () => {
     let [blogs, setBlog] = useState(null);
@@ -51,7 +52,7 @@ const HomePage = () => {
             .catch((err) => {
                 console.log(err);
             });
-    };
+    };    
 
     const fetchBlogsByCategory = ({ page = 1 }) => {
         axios
@@ -117,17 +118,42 @@ const HomePage = () => {
 
     return (
         <>
-            <AnimationWrapper>
-            
-            <section className="h-cover flex justify-center gap-10">
+            <AnimationWrapper>     
+                <>
+                    {blogs == null ? (
+                        <Loader />
+                    ) : (
+                        blogs.results.length ? 
+                            blogs.results.filter((blog, i) => i < 1).map((blog, i) => {                            
+                                return (
+                                    <AnimationWrapper
+                                        transition={{
+                                            duration: 1,
+                                            delay: i * 0.1,
+                                        }}
+                                        key={i}
+                                    >
+                                        <Banner
+                                            content={blog}
+                                            author={
+                                                blog.author.personal_info
+                                            }
+                                        />
+                                    </AnimationWrapper>
+                                );
+                            })
+                        : <NoDataMessage message="ยังไม่มีบทความเผยแพร่" />
+                    )}
+                </>  
+            <section className="h-cover flex justify-center gap-10">                
                 {/* filters and trending blogs */}
-                <div className="min-w-[40%] lg:min-w-[400px] max-w-min border-l border-grey pl-8 pt-3 max-md:hidden">
+                <div className="min-w-[40%] lg:min-w-[400px] max-w-min border-r border-grey pr-8 pt-3 max-md:hidden">
                     <div className="flex flex-col gap-10">
                         <div>
                             <h1 className="font-medium text-xl mb-8">
                                 ข่าวสาร                       
                             </h1>
-                            <div className="mb-5">
+                            <div className="lg:mb-5 mb-10">
                                 <Ads />
                             </div>
 

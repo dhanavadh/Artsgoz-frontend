@@ -87,7 +87,7 @@ const Navbar = () => {
                         <img src={ theme == "light" ? darkLogo : lightLogo } className="" />                    
                     </Link>
                 </div>
-                <div className="hidden lg:flex">                    
+                <div className="hidden xl:flex">                    
                         <Link to="/" className="flex link2">
                             หน้าแรก
                         </Link>
@@ -107,7 +107,7 @@ const Navbar = () => {
                 
 
                 <div className="flex items-center gap-3 md:gap-6 ml-auto">
-                    <button className="md:hidden bg-grey w-12 h-12 rounded-full flex items-center justify-center"
+                    <button className="md:hidden w-12 h-12 rounded-full flex items-center justify-center"
                     onClick={() => setSearchBoxVisibility(currentVal => !currentVal)}
                     >
                         <i className="fi fi-rr-search text-xl"></i>
@@ -117,7 +117,7 @@ const Navbar = () => {
                         <p className="text-lg">เขียนบทความ</p>
                     </Link> */}
 
-                    <button className="w-12 h-12 rounded-full bg-grey relative hover:bg-black/10" onClick={changeTheme}>
+                    <button className="w-12 h-12 rounded-full" onClick={changeTheme}>
                         <i className={"fi fi-rr-" + ( theme == "light" ?  "moon-stars" : "brightness" ) + " text-2xl block mt-1" }></i>
                     </button>
 
@@ -136,7 +136,7 @@ const Navbar = () => {
                         access_token ? 
                         <>
                             <Link to="/dashboard/notifications">
-                                <button className="w-12 h-12 rounded-full bg-grey relative hover:bg-black/10">
+                                <button className="w-12 h-12 rounded-full relative">
                                     <i className="fi fi-rr-bell text-2xl block mt-1"></i>
                                     {
                                         new_notification_available ? 
@@ -165,7 +165,7 @@ const Navbar = () => {
                                 </Link>
                             </div>
                             <Link to='/signin'>
-                                <button  className="md:hidden bg-grey w-12 h-12 flex items-center justify-center">
+                                <button  className="md:hidden bg-grey w-12 h-12 flex items-center justify-center rounded-full">
                                     <i className="fi fi-rr-user text-2xl block mt-1"></i>
                                 </button>
                             </Link>

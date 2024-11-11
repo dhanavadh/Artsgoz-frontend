@@ -10,23 +10,29 @@ const BlogPostCard = ({ content, author }) => {
     return ( 
         <Link to={`/blog/${id}`} className="flex gap-8 items-center border-b border-grey pb-5 mb-4">
             <div className="w-full">
-                <div className="flex gap-2 items-center mb-7">
+                {/* <div className="flex gap-2 items-center mb-4">
                     <img src={profile_img} className="w-6 h-6 rounded-full" />
                     <p className="line-clamp-1">{fullname} @{username}</p>
                     <p className="min-w-fit">{ getDay(publishedAt) }</p>
+                </div> */}
+                <div className="mb-3">
+                    <span className="rounded-full bg-pink-500 py-1 px-2 text-sm text-white">{tags[0]}</span>
                 </div>
-
                 <h1 className="blog-title">{title}</h1>
 
                 <p className="my-3 text-xl font-gelasio leading-7 max-sm:hidden md:max-[1100px]:hidden line-clamp-2">{des}</p>
-
-                <div className="flex gap-4 mt-7">
+                <div className="flex gap-2 items-center mt-4">
+                    <img src={profile_img} className="w-6 h-6 rounded-full" />
+                    <p className="line-clamp-1">{fullname} @{username}</p>
+                    <p className="min-w-fit">เผยแพร่วันที่ { getDay(publishedAt) }</p>
+                </div>
+                {/* <div className="flex gap-4 mt-7">
                     <span className="btn-light py-1 px-4">{tags[0]}</span>
                     <span className="ml-3 flex items-center gap-2 text-dark-grey">
                         <i className="fi fi-rr-heart text-xl"></i>
                         { total_likes }
                     </span>
-                </div>
+                </div> */}
 
             </div>
             
