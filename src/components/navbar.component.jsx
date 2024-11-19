@@ -117,9 +117,9 @@ const Navbar = () => {
                         <p className="text-lg">เขียนบทความ</p>
                     </Link> */}
 
-                    <button className="w-12 h-12 rounded-full" onClick={changeTheme}>
+                    {/* <button className="w-12 h-12 rounded-full" onClick={changeTheme}>
                         <i className={"fi fi-rr-" + ( theme == "light" ?  "moon-stars" : "brightness" ) + " text-2xl block mt-1" }></i>
-                    </button>
+                    </button> */}
 
                     <div className={"absolute bg-white w-full left-0 top-full mt-0.5 border-b border-grey py-4 px-[5vw] md:border-0 md:block md:relative md:inset-0 md:p-0 md:w-auto md:show " + ( searchBoxVisibility ? "show" : "hide" )}>
                         <input 
